@@ -1,0 +1,23 @@
+Variabes = Son referencias a valores que podemos asignar, para reutilizar o simplemente por comodidad. Es mas practico "guardar" el resultado de una cuenta dentro de una variable, para luego mostrar la variable por consola, que hacer la cuenta de nuevo cada vez que queramos imprimirla. Y lo mismo si el resultado de la cuenta puede cambiar con el tiempo.
+
+Strings = Son cadenas de letras, espacios y simbolos (o carateres) que se declaran entre comillas, por ejemplo: 'Hola Mundo!'.
+
+Funciones = Las funciones se utilizan para encapsular y/o reutilizar porciones de codigo, que luego pueden ser llamados desde cualquier punto del programa (siempre y cuando tenga acceso a la funcion). Las funciones pueden tomar argumentos para ser utilizados dentro de la misma, por ejemplo: 
+function suma(a, b) {
+    console.log(a + b);
+}
+que se declaran dentro de los parentesis de la funcion, separados por comas. Las funciones tambien pueden devolver algun valor, usando la palabra clave 'return', por ejemplo: 
+function suma(a, b) {
+    var resultado = a + b; 
+    return resultado;
+}
+
+Declaraciones 'if' = Las declaraciones 'if' son declaraciones condicionales, lo que significa que el bloque de codigo dentro de una se ejecutara solo si se cumple la condicion, por ejemplo: 
+function puedeManejar(edad) {
+    if (edad >= 18) {
+        return true;
+    }
+    return false;
+}
+
+Valores booleanos = Los valores booleanos son el tipo de dato primito mas basico, siendo sus posibles valores verdadero o falso (true o false)
