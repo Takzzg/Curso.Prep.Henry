@@ -1,0 +1,3 @@
+Arrays = Los arrays son una coleccion de valores que se guardan en una sola variable. Los valores definen entre [corchetes], pueden contener distintos tipos de datos y se separan por comas, por ejemplo: 
+var paises = ['Argentina', 'Brazil', 'Chile', 'Uruguay']
+el primer valor esta en la posicion 0, por lo que el ultimo valor estaria en la posicion Array.length - 1 (3 para el caso del array paises)
