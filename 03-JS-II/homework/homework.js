@@ -5,16 +5,14 @@ function obtenerMayor(x, y) {
     // Devuelve el número más grande
     // Si son iguales, devuelve cualquiera de los dos
     // Tu código:
-    if (x > y) return x
-    return y
+    return x > y ? x : y
 }
 
 function mayoriaDeEdad(edad) {
     //Determinar si la persona según su edad puede ingresar a un evento.
     //Si tiene 18 años ó más, devolver --> "Allowed"
     //Si es menor, devolver --> "Not allowed"
-    if (edad >= 18) return "Allowed"
-    return "Not allowed"
+    return edad >= 18 ? "Allowed" : "Not allowed"
 }
 
 function conection(status) {
@@ -117,8 +115,7 @@ function operadoresLogicos(num1, num2, num3) {
     //Si no se cumplen ninguna de las condiciones anteriores, retornar false.
     if (num1 === 0 || num2 === 0 || num3 === 0) return "Error"
     if (num1 < 0 || num2 < 0 || num3 < 0) return "Hay negativos"
-    if (num1 > 0 && num1 > num2 && num1 > num3)
-        return "Número 1 es mayor y positivo"
+    if (num1 > num2 && num1 > num3) return "Número 1 es mayor y positivo"
     if (num3 > num1 && num3 > num2) return ++num3
     return false
 }
@@ -161,10 +158,8 @@ function doWhile(numero) {
     //Retornar el valor final.
     //Usar el bucle do ... while.
     var i = 0
-    do {
-        numero += 5
-        i++
-    } while (i < 8)
+    do numero += 5
+    while (8 > ++i) // nice
     return numero
 }
 
