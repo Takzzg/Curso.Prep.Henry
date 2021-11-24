@@ -1,0 +1,13 @@
+for = el bucle 'for' nos permite repetir un bloque de codigo mientras la condicion sea verdadera. Por ejemplo, el siguiente codigo:
+for (var i = 0; i < 10; i++) {
+    console.log(`Vuelta nro. ${i + 1}`);
+}
+imprimira en la consola:
+Vuelta nro. 1
+Vuelta nro. 2
+Vuelta nro. 3
+...
+Vuelta nro. 10
+Esto sucede porque la variable i comienza en 0, y mientras i sea menor a 10, ejecutaremos el bloque definido entre llaves, y al final de cada vuelta, se ejecutara el tercer 'parametro' del bucle for, el cual se encarga de que la condicion se convierta en false en algun momento y salgamos del bucle
+
+&&, ||, ! = Estos simbolos representan operadores logicos. el simbolo && se lee como 'Y' (ej: ((edad > 18) && (edad < 100)) => edad es mayor a 18 Y edad es menor a 100), y lo mismo para el simbolo || que se lee como 'Ó' (edad mayor a 18 ó edad menor a 100). el singo ! representa una negacion, lo que significa que invierte el valor de la expresion donde se aplique (ej: !(edad < 18) => edad no es menor a 18)
