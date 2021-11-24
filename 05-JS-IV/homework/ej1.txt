@@ -1,0 +1,16 @@
+Objetos = Los objetos son un tipo de dato no primitivo que contiene informacion extensa sobre un tema en particular. los objetos suelen contener propiedades (o informacion) y metodos (o acciones que sabe realizar), como por ejemplo:
+var persona = {
+    nombre: 'Guido',
+    apellido: 'Queiroz',
+    saludar() {console.log(`Hola, mi nombre es ${this.nombre}!`)}
+    saludar2: function() {console.log(`Hola, mi apellido es ${this.apellido}!`)}
+}
+los datos guardados en los objetos suelen ser abstraidos (para que los objetos contengan solo la informacion necesaria y/o relevante), y suelen guardarse en con un nombre que los identifica (key)
+
+Propiedades = Las propiedades de los objetos son los datos que almacena. para poder distinguir entre cada uno se usa la convencion key:value, que significa que cada dato se guarda con una clave que lo identifique
+
+Metodos = Los metodos son 'las acciones que el objeto sabe realizar', por ejemplo una persona podria saber hablar, saludar y caminar, mientras que un avion podria saber como volar, aterrizar y hasta calcular la ruta de vuelo. se pueden definir de dos formas: como key:value, siendo el valor una funcion, o con la nueva sintaxis de ES6 (ver ejemplo arriba)
+
+Bucle for...in = El bucle for...in nos permite iterar sobre las propiedades de un objeto. La sintaxis es for(clave in objeto){...}, lo cual permite separar cada clave del objeto y poder llamarlas dinamicamente (por ejemplo: console.log(objeto[clave]))
+
+Notación de puntos vs notación de corchetes = La diferencia entre estas dos notaciones es que: la notacion de puntos es la mas utilizada cuando se trata de acceder a propiedades de objetos, ademas de ser mas legible; mientras que la notacion de corchetes nos permite acceder dinamicamente a las propiedades, por ejemplo si no sabemos sus nombres
